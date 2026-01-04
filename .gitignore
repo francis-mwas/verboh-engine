@@ -1,0 +1,48 @@
+# --- Build Tools (Maven) ---
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+# Avoid committing the wrapper jar if you want, but many teams keep it:
+# !.mvn/wrapper/maven-wrapper.jar
+
+# --- Build Tools (Gradle) ---
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# --- Compiled Files ---
+*.class
+*.jar
+*.war
+*.ear
+
+# --- IDEs (IntelliJ, Eclipse, VS Code) ---
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+.vscode/
+
+# --- Spring Boot Specific ---
+*.log
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# --- OS / Miscellaneous ---
+.DS_Store
+Thumbs.db
+desktop.ini

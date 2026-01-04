@@ -1,0 +1,38 @@
+# Server Configuration
+server:
+  port: 5050
+
+spring:
+  application:
+    name: coopVerboh
+
+  # Prevents the "Bean already defined" crash if you have duplicate RestTemplates
+  main:
+    allow-bean-definition-overriding: true
+
+  datasource:
+    url:
+    username: postgres
+    password:
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+# --- CUSTOM SERVICE CONFIGURATIONS ---
+# These match the @Value annotations in your STTService
+stt:
+  endpoint: http://localhost:8001/api/v1/stt/transcribe
+  api:
+    key: "super-secret-internal-key"
+
+tts:
+  endpoint: http://localhost:8002/api/v1/tts/synthesize
+  api:
+    key: "super-secret-internal-key"
