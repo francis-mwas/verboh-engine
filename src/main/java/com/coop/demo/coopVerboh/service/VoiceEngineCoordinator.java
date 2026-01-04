@@ -29,7 +29,7 @@ public class VoiceEngineCoordinator {
     private String processIntent(IntentMatchResult intentResult) {
         switch (intentResult.getIntentCode()) {
             case "CHECK_BALANCE":
-                return "Your account balance is KES 12,450";
+                return "Your account balance is KES 23000";
             case "TRANSFER_FUNDS":
                 return "Please provide recipient details to transfer funds";
             default:

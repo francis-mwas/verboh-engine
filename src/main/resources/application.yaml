@@ -11,9 +11,9 @@ spring:
     allow-bean-definition-overriding: true
 
   datasource:
-    url:
+    url: jdbc:postgresql://localhost:5430/coop_verbo
     username: postgres
-    password:
+    password: mwas
     driver-class-name: org.postgresql.Driver
 
   jpa:
