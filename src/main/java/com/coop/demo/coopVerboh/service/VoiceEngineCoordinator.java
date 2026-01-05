@@ -2,8 +2,10 @@ package com.coop.demo.coopVerboh.service;
 
 import com.coop.demo.coopVerboh.model.IntentMatchResult;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class VoiceEngineCoordinator {
@@ -27,6 +29,7 @@ public class VoiceEngineCoordinator {
     }
 
     private String processIntent(IntentMatchResult intentResult) {
+        log.info("Intent code: {}", intentResult.getIntentCode());
         switch (intentResult.getIntentCode()) {
             case "CHECK_BALANCE":
                 return "Your account balance is KES 23000";

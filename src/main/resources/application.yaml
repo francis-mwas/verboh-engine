@@ -36,3 +36,7 @@ tts:
   endpoint: http://localhost:8002/api/v1/tts/synthesize
   api:
     key: "super-secret-internal-key"
+voice:
+  welcome-text: >
+    Hello. How can I help you today?
+    You can say things like check my balance or send money.
