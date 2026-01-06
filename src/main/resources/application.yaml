@@ -13,7 +13,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5430/coop_verbo
     username: postgres
-    password: mwas
+    password:
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -38,5 +38,4 @@ tts:
     key: "super-secret-internal-key"
 voice:
   welcome-text: >
-    Hello. How can I help you today?
-    You can say things like check my balance or send money.
+    Welcome to Verboh. How may I assist you today? You can check your balance, transfer funds, or request a statement.
